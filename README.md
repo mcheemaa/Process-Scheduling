@@ -11,6 +11,7 @@ the minimum coverage requirements. The program can be tested by writing ‘make�
 once it is done we follow by writing ‘./ArrayList_TEST’ or ./LinkedList_TEST’. We also
 implemented the simulation to see the differences in the times taken which can be run by typing
 ‘./schedulism 10 1000 1000000’.
+
 In the Round Robin scheduler, I/O bound processes tend to get fairly little CPU time and spend
 a lot of time waiting, which causes frustration for users. Therefore, we implemented the
 Completely Fair Scheduler, which handles this problem in an elegant manner. The idea is to
@@ -24,6 +25,7 @@ significant part of what we wrote was being used and it met the minimum coverage
 requirements. The program can be tested by writing ‘make’ and then once it is done we follow
 by writing ‘./BSTMultimap_TEST’. The simulation can also be run in a similar manner to the
 Round Robin. Looking at that we can see that it is faster on average.
+
 Completely Fair Scheduler using a binary search tree improves a lot of I/O-bound processes but
 at great overhead cost. The scheduler constantly removes nodes from the “left side” of the tree
 and inserts them on the “right side,” causing a severe imbalance in the BST, making insertion
